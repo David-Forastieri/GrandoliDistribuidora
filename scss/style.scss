@@ -1,0 +1,255 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.body{
+    display: grid;
+    grid-template-areas:
+    'header'
+    'section'
+    'footer';
+
+    grid-template-rows:auto 110% auto;
+    grid-template-columns: auto;
+    height: auto;
+   
+} 
+
+#header{
+    grid-area: header;
+    width: 100%;
+    height: auto;
+    background-color: #7B9331;
+    .nav-link:hover{
+       color: black;
+    }
+   
+}
+section{
+    grid-area: section;
+    height: 100%;
+}
+
+#nosotros{
+    background-color: #131212;
+    img{
+        width: 100%;
+        height: 400px;
+        margin-bottom: 25px;
+    }
+    h2{
+        font-weight: bold;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    p{
+        font-weight: bold;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 60px;
+        font-size: 20px;       
+    }
+}
+
+.eslogan{
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    p{
+        color: #FFFFFF;
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+}
+
+#productos{
+    h3{
+        color: #7B9331;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    
+}
+.productos{
+    .card-text{
+        color: #FFFFFF;
+        text-align: center;
+        background-color: #8d7a69;
+    }
+}
+.btn-catalogo{
+    .btn-primary{
+        background-color: #FFFFFF;
+        border: 3px solid #7B9331;
+        border-radius: 20px;
+        width: 30%;
+        margin-top: 20px;
+        box-shadow: 1px 3px #3b4d08;
+    }
+    a{
+        color: #7B9331;
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+}
+
+.marcas{
+    h3{
+        text-align: center;
+        color: #7B9331;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+}
+
+#contactos{
+    background-color: #7B9331;
+    margin-top: 70px;
+    .card{
+        background-color: #7B9331;
+        border: none;
+    }
+    h5{
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        color: #FFFFFF;
+    }
+}
+
+.flecha{
+    width: 2.7%;
+    text-align: end;
+    margin-left: 95%;
+    position: absolute;
+    position: fixed;
+    top: 560px;
+    z-index: 1;
+}
+
+
+.titulo-catalogo{
+    h2{
+        color: #7B9331;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+}
+
+.catalogo{
+       
+    margin: auto;
+    width:100%;
+    padding: 30px;
+
+    ul, li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    ul.slider{
+        position: relative;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    ul.slider li {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .8s;
+    }
+
+    ul.slider li img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    ul.slider li:first-child {
+        opacity: 1; /*Mostramos el primer <li>*/
+    }
+
+    ul.slider li:target {
+        opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+    }
+}
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+.menu li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: grey;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 100%;
+}  
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+@media (max-width: 770px) {
+    .btn-catalogo{
+        .btn-primary{
+            width: 50%;
+        }
+    }
+    .flecha{
+        margin-left: 93%;
+    }
+}
+
+@media (max-width: 576px) {
+    .flecha{
+        margin-left: 88%;
+    }
+}
+
+@media (max-width: 476px) {
+    .flecha{
+        margin-left: 85%;
+    }
+    
+}
+
+@media (max-width: 370px) {
+    .flecha{
+        margin-left: 82%;
+        top: 630px;
+    }
+   
+}
+
