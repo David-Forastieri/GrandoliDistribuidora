@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 .body {
+  font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-areas: 'header' 'section' 'footer';
   grid-template-rows: auto 110% auto;
@@ -28,16 +29,15 @@ section {
     margin-bottom: 25px; }
   #nosotros h2 {
     font-weight: bold;
-    text-align: center;
     color: #FFFFFF;
     font-size: 30px;
     margin-bottom: 20px;
     margin-top: 30px; }
   #nosotros p {
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
-    line-height: 60px;
+    line-height: 40px;
     font-size: 20px; }
 
 .eslogan {
@@ -59,13 +59,16 @@ section {
   margin-bottom: 20px;
   font-size: 30px; }
 
+.productos .card {
+  margin-top: 17px; }
+
 .productos .card-text {
   color: #FFFFFF;
   text-align: center;
   background-color: #8d7a69; }
 
 .btn-catalogo .btn-primary {
-  background-color: #FFFFFF;
+  background-color: #7B9331;
   border: 3px solid #7B9331;
   border-radius: 20px;
   width: 30%;
@@ -73,7 +76,7 @@ section {
   box-shadow: 1px 3px #3b4d08; }
 
 .btn-catalogo a {
-  color: #7B9331;
+  color: #FFFFFF;
   font-weight: bold;
   text-decoration: none; }
 
@@ -166,7 +169,16 @@ section {
   border-radius: 100%; }
 
 .footer {
+  margin-top: 50px;
   grid-area: footer; }
+
+@media (max-width: 980px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 85% auto;
+    grid-template-columns: auto;
+    height: auto; } }
 
 @media (max-width: 770px) {
   .btn-catalogo .btn-primary {
@@ -174,15 +186,113 @@ section {
   .flecha {
     margin-left: 93%; } }
 
+@media (max-width: 767px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 100% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
 @media (max-width: 576px) {
   .flecha {
-    margin-left: 88%; } }
+    margin-left: 88%; }
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 105% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 575px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 235% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 560px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 230% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 540px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 220% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 503px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 206% auto;
+    grid-template-columns: auto;
+    height: auto; } }
 
 @media (max-width: 476px) {
   .flecha {
-    margin-left: 85%; } }
+    margin-left: 85%; }
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 195% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 466px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 189% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 445px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 175% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 420px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 165% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 400px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 155% auto;
+    grid-template-columns: auto;
+    height: auto; } }
 
 @media (max-width: 370px) {
   .flecha {
     margin-left: 82%;
-    top: 630px; } }
+    top: 630px; }
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 150% auto;
+    grid-template-columns: auto;
+    height: auto; } }
+
+@media (max-width: 360px) {
+  .body {
+    display: grid;
+    grid-template-areas: 'header' 'section' 'footer';
+    grid-template-rows: auto 150% auto;
+    grid-template-columns: auto;
+    height: auto; } }
