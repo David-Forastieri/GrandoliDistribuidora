@@ -41,7 +41,6 @@ section{
     }
     h2{
         font-weight: bold;
-        //text-align: left;
         color: #FFFFFF;
         font-size: 30px;
         margin-bottom: 20px;
@@ -156,8 +155,7 @@ section{
     }
 }
 
-.catalogo{
-       
+.catalogo{      
     margin: auto;
     width:100%;
     padding: 30px;
@@ -222,9 +220,6 @@ section{
     margin-top: 50px;
     grid-area: footer;
 }
-
-
-
 @media (max-width: 980px) {
     .body{
         display: grid;
@@ -235,12 +230,9 @@ section{
     
         grid-template-rows:auto 85% auto;
         grid-template-columns: auto;
-        height: auto;
-       
-    } 
-    
+        height: auto; 
+    }    
 }
-
 @media (max-width: 770px) {
     .btn-catalogo{
         .btn-primary{
@@ -267,7 +259,6 @@ section{
     } 
     
 }
-
 @media (max-width: 576px) {
     .flecha{
         margin-left: 88%;
