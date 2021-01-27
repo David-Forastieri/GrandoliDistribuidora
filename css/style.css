@@ -14,6 +14,8 @@ body {
   width: 100%;
   height: auto;
   background-color: #7B9331; }
+  #header .nav-link {
+    margin-left: 20px; }
   #header .nav-link:hover {
     color: black; }
 
@@ -21,12 +23,24 @@ section {
   grid-area: section;
   height: 100%; }
 
+.eslogan {
+  width: auto;
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  .eslogan p {
+    margin-left: 110px;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px; }
+
 #nosotros {
   background-color: #131212; }
   #nosotros img {
     width: 100%;
-    height: 400px;
-    margin-bottom: 25px; }
+    height: 400px; }
   #nosotros h2 {
     font-weight: bold;
     color: #FFFFFF;
@@ -39,18 +53,6 @@ section {
     color: #FFFFFF;
     line-height: 40px;
     font-size: 20px; }
-
-.eslogan {
-  width: auto;
-  height: 500px;
-  background-size: cover;
-  display: flex;
-  align-items: center; }
-  .eslogan p {
-    color: #FFFFFF;
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-top: 30px; }
 
 #productos h3 {
   color: #7B9331;
@@ -178,7 +180,9 @@ section {
     grid-template-areas: 'header' 'section' 'footer';
     grid-template-rows: auto 85% auto;
     grid-template-columns: auto;
-    height: auto; } }
+    height: auto; }
+  .eslogan {
+    background-size: auto; } }
 
 @media (max-width: 770px) {
   .btn-catalogo .btn-primary {
@@ -190,9 +194,11 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 100% auto;
+    grid-template-rows: auto 110% auto;
     grid-template-columns: auto;
-    height: auto; } }
+    height: auto; }
+  .eslogan p {
+    margin-left: 0; } }
 
 @media (max-width: 576px) {
   .flecha {
@@ -208,7 +214,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 235% auto;
+    grid-template-rows: auto 280% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -216,7 +222,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 230% auto;
+    grid-template-rows: auto 276% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -224,7 +230,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 220% auto;
+    grid-template-rows: auto 260% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -232,7 +238,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 206% auto;
+    grid-template-rows: auto 250% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -242,7 +248,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 195% auto;
+    grid-template-rows: auto 230% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -250,7 +256,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 189% auto;
+    grid-template-rows: auto 230% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -258,7 +264,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 175% auto;
+    grid-template-rows: auto 210% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -266,7 +272,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 165% auto;
+    grid-template-rows: auto 190% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -274,7 +280,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 155% auto;
+    grid-template-rows: auto 180% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -285,7 +291,7 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 150% auto;
+    grid-template-rows: auto 180% auto;
     grid-template-columns: auto;
     height: auto; } }
 
@@ -293,6 +299,8 @@ section {
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
-    grid-template-rows: auto 150% auto;
+    grid-template-rows: auto 180% auto;
     grid-template-columns: auto;
-    height: auto; } }
+    height: auto; }
+  .eslogan p {
+    margin-left: 0; } }
