@@ -282,12 +282,15 @@ section {
     grid-template-areas: 'header' 'section' 'footer';
     grid-template-rows: auto 180% auto;
     grid-template-columns: auto;
-    height: auto; } }
+    height: auto; }
+  .flecha {
+    margin-left: 83%;
+    margin-top: 10%; } }
 
 @media (max-width: 370px) {
   .flecha {
     margin-left: 82%;
-    top: 630px; }
+    margin-top: 15%; }
   .body {
     display: grid;
     grid-template-areas: 'header' 'section' 'footer';
@@ -303,4 +306,12 @@ section {
     grid-template-columns: auto;
     height: auto; }
   .eslogan p {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .flecha {
+    margin-left: 80%;
+    margin-top: 15%; } }
+
+@media (max-width: 320px) {
+  .flecha {
+    margin-left: 70%;
+    margin-top: 45%; } }
